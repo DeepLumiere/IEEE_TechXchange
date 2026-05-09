@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CiperQuest</title>
+    <title>CipherQuest</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,7 +11,7 @@
       <div class="city-bg"></div>
 
       <header class="top-bar">
-        <div class="logo">CiperQuest</div>
+        <div class="logo">CipherQuest</div>
         <div class="player-strip">
           <div class="profile-avatar">A</div>
           <div class="player-meta">
@@ -19,7 +19,6 @@
             <div class="player-level">Level 07 Operative</div>
           </div>
         </div>
-        <button class="skip-intro" id="skipIntroBtn">Skip intro</button>
       </header>
 
       <main class="layout">
@@ -35,14 +34,16 @@
 
           <div class="chat-panel" id="chatAdvanceArea">
             <div class="chat-header">
-              <span class="chat-status-dot"></span>
-              <span class="chat-title">Cipher Unit-01</span>
+              <span class="chat-title">Cipher</span>
             </div>
             <div class="chat-body" id="chatBody">
               <!-- Messages injected by JS -->
             </div>
             <div class="chat-footer">
-              <button class="chat-next-btn" id="nextStepBtn">Continue</button>
+              <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="chat-next-btn" id="nextStepBtn">Continue</button>
+                <button class="skip-intro-text" id="skipIntroBtn">Skip intro</button>
+              </div>
               <div class="chat-hint">Press Enter or click to continue</div>
             </div>
           </div>
@@ -53,7 +54,7 @@
             <div class="modes-header">
               <h1 class="dashboard-title">Console Modes</h1>
               <p class="dashboard-subtitle">
-                Select a mode below. Detailed pages come later.
+                Choose your path and embark on your cipher-solving adventure!
               </p>
             </div>
 

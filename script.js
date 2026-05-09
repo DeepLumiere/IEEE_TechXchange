@@ -169,15 +169,16 @@ function goToNextStep() {
     showStep(currentStepIndex);
   } else {
     tiles.forEach((tile) => tile.classList.remove("is-highlighted"));
-    nextStepBtn.disabled = true;
-    nextStepBtn.textContent = "Tutorial complete";
+    const heroSpace = document.querySelector('.hero-space');
+    if (heroSpace) heroSpace.style.display = "none";
+    if (skipIntroBtn) skipIntroBtn.style.display = "none";
     isFinished = true;
   }
 }
 
 function skipIntro() {
   currentStepIndex = steps.length - 1;
-  showStep(currentStepIndex);
+  goToNextStep();
 }
 
 if (nextStepBtn) {
